@@ -201,7 +201,7 @@ function! s:get_color(attr, ...)
   return ''
 endfunction
 
-let s:ansi = {'black': 30, 'red': 31, 'green': 32, 'yellow': 33, 'blue': 34, 'magenta': 35, 'cyan': 36}
+let s:ansi = {'black': 32, 'red': 31, 'green': 32, 'yellow': 33, 'blue': 34, 'magenta': 35, 'cyan': 36}
 
 function! s:csi(color, fg)
   let prefix = a:fg ? '38;' : '48;'
