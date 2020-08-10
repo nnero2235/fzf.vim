@@ -92,13 +92,13 @@ if (has('nvim') || has('terminal') && has('patch-8.0.995')) && (get(g:, 'fzf_sta
       doautocmd User FzfStatusLine
     else
       if $TERM !~ "256color"
-        highlight default fzf1 ctermfg=1 ctermbg=8 guifg=#E12672 guibg=#565656
-        highlight default fzf2 ctermfg=2 ctermbg=8 guifg=#BCDDBD guibg=#565656
-        highlight default fzf3 ctermfg=7 ctermbg=8 guifg=#D9D9D9 guibg=#565656
+        highlight default fzf1 ctermfg=1 ctermbg=2 guifg=#E12672 guibg=#C5D1D0
+        highlight default fzf2 ctermfg=2 ctermbg=2 guifg=#BCDDBD guibg=#C5D1D0
+        highlight default fzf3 ctermfg=7 ctermbg=2 guifg=#D9D9D9 guibg=#C5D1D0
       else
-        highlight default fzf1 ctermfg=161 ctermbg=238 guifg=#E12672 guibg=#565656
-        highlight default fzf2 ctermfg=151 ctermbg=238 guifg=#BCDDBD guibg=#565656
-        highlight default fzf3 ctermfg=252 ctermbg=238 guifg=#D9D9D9 guibg=#565656
+        highlight default fzf1 ctermfg=161 ctermbg=79 guifg=#E12672 guibg=#C5D1D0
+        highlight default fzf2 ctermfg=151 ctermbg=79 guifg=#BCDDBD guibg=#C5D1D0
+        highlight default fzf3 ctermfg=252 ctermbg=79 guifg=#D9D9D9 guibg=#C5D1D0
       endif
       setlocal statusline=%#fzf1#\ >\ %#fzf2#fz%#fzf3#f
     endif
